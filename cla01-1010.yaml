@@ -46,6 +46,34 @@ tun:
     - 1.1.1.1
     - 1.0.0.1
 proxies:
+  - name: 12(TG:@tccjd)
+    type: vmess
+    server: sy4.620720.xyz
+    port: 443
+    uuid: 516d8a7a-3f0b-41d3-bad0-246116381516
+    alterId: 0
+    cipher: auto
+    tls: true
+    skip-cert-verify: false
+    network: ws
+    ws-opts:
+      path: /
+      headers:
+        Host: sy4.620720.xyz
+  - name: 13(TG:@tccjd)
+    type: vmess
+    server: t1.620720.xyz
+    port: 8443
+    uuid: 516d8a7a-3f0b-41d3-bad0-246116381516
+    alterId: 0
+    cipher: auto
+    tls: true
+    skip-cert-verify: false
+    network: ws
+    ws-opts:
+      path: /
+      headers:
+        Host: t1.620720.xyz
   - name: 🇺🇸 美国 | USA
     type: vless
     server: www.visa.com.sg
@@ -73,13 +101,6 @@ proxies:
       headers:
         Host: l.ayovo.netlib.re
   - name: 🇩🇪 德国 | DEU
-    type: hysteria2
-    server: 130.61.50.75
-    port: 6443
-    password: zhangyang
-    sni: dash.cloudflare.com
-    skip-cert-verify: true
-  - name: 🇩🇪 德国 | DEU_1
     type: vless
     server: 5.10.214.5
     port: 2096
@@ -92,7 +113,7 @@ proxies:
       path: /
       headers:
         Host: TzS7v35LfD.sMaRtTeChZaAl.InFo
-  - name: 🇩🇪 德国 | DEU_2
+  - name: 🇩🇪 德国 | DEU_1
     type: vless
     server: api.dark-coffe.com
     port: 2096
@@ -105,22 +126,6 @@ proxies:
       path: /
       headers:
         Host: TzS7v35LfD.sMaRtTeChZaAl.InFo
-  - name: 🇭🇰 香港3|@stairnode
-    type: trojan
-    server: 58.152.18.147
-    port: 443
-    password: 4843e94d205f3893f588255a591abe94
-    sni: www.nintendogames.net
-    skip-cert-verify: false
-    tls: true
-  - name: 🇭🇰 香港 电讯盈科有限公司
-    type: trojan
-    server: 58.152.53.219
-    port: 443
-    password: BxceQaOe
-    sni: t.me/ripaojiedian
-    skip-cert-verify: true
-    tls: true
   - name: 01(TG:@tccjd)
     type: vless
     server: octopusss5.info
@@ -143,17 +148,6 @@ proxies:
     network: grpc
     servername: pqh27v1.carwashipdir.shop
     tls: true
-  - name: 03(TG:@tccjd)
-    type: vless
-    server: api-saronet.sarhadpirani.ir
-    port: 2052
-    uuid: cb522244-ff63-4883-ae1f-87d883fb2da7
-    network: httpupgrade
-    tls: false
-    http-opts:
-      path: /api/status/?ed=2560
-      headers:
-        Host: cLoUd.zIrAkOmAmLe.CoM
   - name: 04(TG:@tccjd)
     type: vless
     server: api.dark-coffe.com
@@ -240,34 +234,6 @@ proxies:
       path: /
       headers:
         Host: hzr27.sepiol.name.NG
-  - name: 12(TG:@tccjd)
-    type: vmess
-    server: sy4.620720.xyz
-    port: 443
-    uuid: 516d8a7a-3f0b-41d3-bad0-246116381516
-    alterId: 0
-    cipher: auto
-    tls: true
-    skip-cert-verify: false
-    network: ws
-    ws-opts:
-      path: /
-      headers:
-        Host: sy4.620720.xyz
-  - name: 13(TG:@tccjd)
-    type: vmess
-    server: t1.620720.xyz
-    port: 8443
-    uuid: 516d8a7a-3f0b-41d3-bad0-246116381516
-    alterId: 0
-    cipher: auto
-    tls: true
-    skip-cert-verify: false
-    network: ws
-    ws-opts:
-      path: /
-      headers:
-        Host: t1.620720.xyz
   - name: 01(TG:@tccjd)_1
     type: vless
     server: 104.16.142.237
@@ -279,19 +245,6 @@ proxies:
       path: /
       headers:
         Host: fangbinxingnmsl.pusytroller.cf
-  - name: 02(TG:@tccjd)_1
-    type: vless
-    server: 181.214.99.116
-    port: 443
-    uuid: 7c63f43f-f526-49bb-b5c8-2be26e11ef00
-    network: http
-    servername: statue.lnmarketplace.net
-    tls: true
-    client-fingerprint: chrome
-    http-opts:
-      path: /statue
-      headers:
-        Host: statue.lnmarketplace.net
   - name: 01(TG:@tccjd)_2
     type: vless
     server: 151.101.3.8
@@ -303,7 +256,7 @@ proxies:
       path: /
       headers:
         Host: mitivpn.global.ssl.fastly.net
-  - name: 02(TG:@tccjd)_2
+  - name: 02(TG:@tccjd)_1
     type: vless
     server: 151.101.3.8
     port: 80
@@ -314,7 +267,7 @@ proxies:
       path: /--@V2rayAlpha--V2rayAlpha--V2rayAlpha--V2rayAlpha
       headers:
         Host: mitivpn.global.ssl.fastly.net
-  - name: 03(TG:@tccjd)_1
+  - name: 03(TG:@tccjd)
     type: vless
     server: 151.101.3.8
     port: 80
@@ -431,17 +384,6 @@ proxies:
       path: /
       headers:
         Host: GfV5t2331T.sMaRtTeChZaAl.InFo
-  - name: 14(TG:@tccjd)
-    type: vless
-    server: 199.232.24.2
-    port: 80
-    uuid: Parsashonam-338
-    network: http
-    tls: false
-    http-opts:
-      path: /Parsashonam-Parsashonam-Parsashonam-Parsashonam-Parsashonam-Parsashonam-Parsashonam-Parsashonam-Parsashonam-Parsashonam-Parsashonam-Parsashonam-Parsashonam-Parsashonam-Parsashonam-Parsashonam-Parsashonam-Parsashonam-Parsashonam-Parsashonam-Parsashonam-Parsashonam-Parsashonam-Parsashonam-Parsashonam-Parsashonam-Parsashonam-Parsashonam-Parsashonam-Parsashonam-Parsashonam-Parsashonam-Parsashonam-Parsashonam-Parsashonam-Parsashonam-Parsashonam-Parsashonam-Parsashonam-Parsashonam-Parsashonam-Parsashonam-Parsashonam-Parsashonam-Parsashonam-Parsashonam-Parsashonam-Parsashonam-Parsashonam-Parsashonam-Parsashonam-Parsashonam
-      headers:
-        Host: Free-V2ray-Bot-Parsashonam3.global.ssl.fastly.net
   - name: 15(TG:@tccjd)
     type: vless
     server: api.dark-coffe.com
@@ -453,56 +395,7 @@ proxies:
     client-fingerprint: chrome
     ws-opts:
       path: /
-  - name: 16(TG:@tccjd)
-    type: vless
-    server: 167.82.93.227
-    port: 80
-    uuid: Parsashonam-338
-    network: http
-    tls: false
-    http-opts:
-      path: /Parsashonam-Parsashonam-Parsashonam-Parsashonam-Parsashonam-Parsashonam-Parsashonam-Parsashonam-Parsashonam-Parsashonam-Parsashonam-Parsashonam-Parsashonam-Parsashonam-Parsashonam-Parsashonam-Parsashonam-Parsashonam-Parsashonam-Parsashonam-Parsashonam-Parsashonam-Parsashonam-Parsashonam-Parsashonam-Parsashonam-Parsashonam-Parsashonam-Parsashonam-Parsashonam-Parsashonam-Parsashonam-Parsashonam-Parsashonam-Parsashonam-Parsashonam-Parsashonam-Parsashonam-Parsashonam-Parsashonam
-      headers:
-        Host: Free-V2ray-Bot-Parsashonam4.global.ssl.fastly.net
-  - name: 17(TG:@tccjd)
-    type: vless
-    server: 151.101.105.226
-    port: 80
-    uuid: Parsashonam-338
-    network: http
-    tls: false
-    http-opts:
-      path: /Parsashonam-Parsashonam-Parsashonam-Parsashonam-Parsashonam-Parsashonam-Parsashonam-Parsashonam-Parsashonam-Parsashonam-Parsashonam-Parsashonam-Parsashonam-Parsashonam-Parsashonam-Parsashonam-Parsashonam-Parsashonam-Parsashonam-Parsashonam-Parsashonam-Parsashonam-Parsashonam-Parsashonam-Parsashonam-Parsashonam-Parsashonam-Parsashonam-Parsashonam-Parsashonam-Parsashonam-Parsashonam-Parsashonam-Parsashonam-Parsashonam-Parsashonam-Parsashonam-Parsashonam-Parsashonam-Parsashonam
-      headers:
-        Host: Free-V2ray-Bot-Parsashonam4.global.ssl.fastly.net
-  - name: 18(TG:@tccjd)
-    type: vless
-    server: 199.232.240.249
-    port: 80
-    uuid: Parsashonam-338
-    network: http
-    tls: false
-    http-opts:
-      path: /Parsashonam-Parsashonam-Parsashonam-Parsashonam-Parsashonam-Parsashonam-Parsashonam-Parsashonam-Parsashonam-Parsashonam-Parsashonam-Parsashonam-Parsashonam-Parsashonam-Parsashonam-Parsashonam-Parsashonam-Parsashonam-Parsashonam-Parsashonam-Parsashonam-Parsashonam-Parsashonam-Parsashonam-Parsashonam-Parsashonam-Parsashonam-Parsashonam-Parsashonam-Parsashonam-Parsashonam-Parsashonam-Parsashonam-Parsashonam-Parsashonam-Parsashonam-Parsashonam-Parsashonam-Parsashonam-Parsashonam
-      headers:
-        Host: Free-V2ray-Bot-Parsashonam4.global.ssl.fastly.net
   - name: 美国
-    type: trojan
-    server: 205.185.115.223
-    port: 19258
-    password: iWnFtzMiac
-    sni: cloudflare.com
-    skip-cert-verify: false
-    tls: true
-  - name: 美国_1
-    type: trojan
-    server: 205.185.115.223
-    port: 19258
-    password: iWnFtzMiac
-    sni: cloudflare.com
-    skip-cert-verify: false
-    tls: true
-  - name: 美国_2
     type: vless
     server: ilta-wzxrxkdhbjpnprhkkpplsjwawhssvollvxzdhqshiqckwdgrdm.orbnet.xyz
     port: 443
@@ -598,22 +491,43 @@ proxies:
     reality-opts:
       public-key: KX1PfrASrflF1Ra1TcjujnOAK-4sPiEVDSfAPS1DAl8
       short-id: e33013f4
+  - name: 🇭🇰 香港3|@stairnode
+    type: trojan
+    server: 58.152.18.147
+    port: 443
+    password: 4843e94d205f3893f588255a591abe94
+    sni: www.nintendogames.net
+    skip-cert-verify: false
+    tls: true
+  - name: 🇭🇰 香港 电讯盈科有限公司
+    type: trojan
+    server: 58.152.53.219
+    port: 443
+    password: BxceQaOe
+    sni: t.me/ripaojiedian
+    skip-cert-verify: true
+    tls: true
+  - name: 🇩🇪 德国 | DEU_2
+    type: hysteria2
+    server: 130.61.50.75
+    port: 6443
+    password: zhangyang
+    sni: dash.cloudflare.com
+    skip-cert-verify: true
 proxy-groups:
   - name: 🚀 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - DIRECT
+      - 12(TG:@tccjd)
+      - 13(TG:@tccjd)
       - 🇺🇸 美国 | USA
       - 🇺🇸 美国 | USA_1
       - 🇩🇪 德国 | DEU
       - 🇩🇪 德国 | DEU_1
-      - 🇩🇪 德国 | DEU_2
-      - 🇭🇰 香港3|@stairnode
-      - 🇭🇰 香港 电讯盈科有限公司
       - 01(TG:@tccjd)
       - 02(TG:@tccjd)
-      - 03(TG:@tccjd)
       - 04(TG:@tccjd)
       - 05(TG:@tccjd)
       - 07(TG:@tccjd)
@@ -621,13 +535,10 @@ proxy-groups:
       - 09(TG:@tccjd)
       - 10(TG:@tccjd)
       - 11(TG:@tccjd)
-      - 12(TG:@tccjd)
-      - 13(TG:@tccjd)
       - 01(TG:@tccjd)_1
-      - 02(TG:@tccjd)_1
       - 01(TG:@tccjd)_2
-      - 02(TG:@tccjd)_2
-      - 03(TG:@tccjd)_1
+      - 02(TG:@tccjd)_1
+      - 03(TG:@tccjd)
       - 05(TG:@tccjd)_1
       - 06(TG:@tccjd)
       - 07(TG:@tccjd)_1
@@ -637,14 +548,8 @@ proxy-groups:
       - 11(TG:@tccjd)_1
       - 12(TG:@tccjd)_1
       - 13(TG:@tccjd)_1
-      - 14(TG:@tccjd)
       - 15(TG:@tccjd)
-      - 16(TG:@tccjd)
-      - 17(TG:@tccjd)
-      - 18(TG:@tccjd)
       - 美国
-      - 美国_1
-      - 美国_2
       - 01(TG:@tccjd)_3
       - 越南
       - 越南_1
@@ -652,19 +557,20 @@ proxy-groups:
       - 越南_3
       - 越南_4
       - 越南_5
+      - 🇭🇰 香港3|@stairnode
+      - 🇭🇰 香港 电讯盈科有限公司
+      - 🇩🇪 德国 | DEU_2
   - name: ♻️ 自动选择
     type: url-test
     proxies:
+      - 12(TG:@tccjd)
+      - 13(TG:@tccjd)
       - 🇺🇸 美国 | USA
       - 🇺🇸 美国 | USA_1
       - 🇩🇪 德国 | DEU
       - 🇩🇪 德国 | DEU_1
-      - 🇩🇪 德国 | DEU_2
-      - 🇭🇰 香港3|@stairnode
-      - 🇭🇰 香港 电讯盈科有限公司
       - 01(TG:@tccjd)
       - 02(TG:@tccjd)
-      - 03(TG:@tccjd)
       - 04(TG:@tccjd)
       - 05(TG:@tccjd)
       - 07(TG:@tccjd)
@@ -672,13 +578,10 @@ proxy-groups:
       - 09(TG:@tccjd)
       - 10(TG:@tccjd)
       - 11(TG:@tccjd)
-      - 12(TG:@tccjd)
-      - 13(TG:@tccjd)
       - 01(TG:@tccjd)_1
-      - 02(TG:@tccjd)_1
       - 01(TG:@tccjd)_2
-      - 02(TG:@tccjd)_2
-      - 03(TG:@tccjd)_1
+      - 02(TG:@tccjd)_1
+      - 03(TG:@tccjd)
       - 05(TG:@tccjd)_1
       - 06(TG:@tccjd)
       - 07(TG:@tccjd)_1
@@ -688,14 +591,8 @@ proxy-groups:
       - 11(TG:@tccjd)_1
       - 12(TG:@tccjd)_1
       - 13(TG:@tccjd)_1
-      - 14(TG:@tccjd)
       - 15(TG:@tccjd)
-      - 16(TG:@tccjd)
-      - 17(TG:@tccjd)
-      - 18(TG:@tccjd)
       - 美国
-      - 美国_1
-      - 美国_2
       - 01(TG:@tccjd)_3
       - 越南
       - 越南_1
@@ -703,6 +600,9 @@ proxy-groups:
       - 越南_3
       - 越南_4
       - 越南_5
+      - 🇭🇰 香港3|@stairnode
+      - 🇭🇰 香港 电讯盈科有限公司
+      - 🇩🇪 德国 | DEU_2
     url: http://www.gstatic.com/generate_204
     interval: 300
     tolerance: 50
@@ -712,16 +612,14 @@ proxy-groups:
       - 🚀 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
+      - 12(TG:@tccjd)
+      - 13(TG:@tccjd)
       - 🇺🇸 美国 | USA
       - 🇺🇸 美国 | USA_1
       - 🇩🇪 德国 | DEU
       - 🇩🇪 德国 | DEU_1
-      - 🇩🇪 德国 | DEU_2
-      - 🇭🇰 香港3|@stairnode
-      - 🇭🇰 香港 电讯盈科有限公司
       - 01(TG:@tccjd)
       - 02(TG:@tccjd)
-      - 03(TG:@tccjd)
       - 04(TG:@tccjd)
       - 05(TG:@tccjd)
       - 07(TG:@tccjd)
@@ -729,13 +627,10 @@ proxy-groups:
       - 09(TG:@tccjd)
       - 10(TG:@tccjd)
       - 11(TG:@tccjd)
-      - 12(TG:@tccjd)
-      - 13(TG:@tccjd)
       - 01(TG:@tccjd)_1
-      - 02(TG:@tccjd)_1
       - 01(TG:@tccjd)_2
-      - 02(TG:@tccjd)_2
-      - 03(TG:@tccjd)_1
+      - 02(TG:@tccjd)_1
+      - 03(TG:@tccjd)
       - 05(TG:@tccjd)_1
       - 06(TG:@tccjd)
       - 07(TG:@tccjd)_1
@@ -745,14 +640,8 @@ proxy-groups:
       - 11(TG:@tccjd)_1
       - 12(TG:@tccjd)_1
       - 13(TG:@tccjd)_1
-      - 14(TG:@tccjd)
       - 15(TG:@tccjd)
-      - 16(TG:@tccjd)
-      - 17(TG:@tccjd)
-      - 18(TG:@tccjd)
       - 美国
-      - 美国_1
-      - 美国_2
       - 01(TG:@tccjd)_3
       - 越南
       - 越南_1
@@ -760,21 +649,22 @@ proxy-groups:
       - 越南_3
       - 越南_4
       - 越南_5
+      - 🇭🇰 香港3|@stairnode
+      - 🇭🇰 香港 电讯盈科有限公司
+      - 🇩🇪 德国 | DEU_2
   - name: 📲 电报信息
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
+      - 12(TG:@tccjd)
+      - 13(TG:@tccjd)
       - 🇺🇸 美国 | USA
       - 🇺🇸 美国 | USA_1
       - 🇩🇪 德国 | DEU
       - 🇩🇪 德国 | DEU_1
-      - 🇩🇪 德国 | DEU_2
-      - 🇭🇰 香港3|@stairnode
-      - 🇭🇰 香港 电讯盈科有限公司
       - 01(TG:@tccjd)
       - 02(TG:@tccjd)
-      - 03(TG:@tccjd)
       - 04(TG:@tccjd)
       - 05(TG:@tccjd)
       - 07(TG:@tccjd)
@@ -782,13 +672,10 @@ proxy-groups:
       - 09(TG:@tccjd)
       - 10(TG:@tccjd)
       - 11(TG:@tccjd)
-      - 12(TG:@tccjd)
-      - 13(TG:@tccjd)
       - 01(TG:@tccjd)_1
-      - 02(TG:@tccjd)_1
       - 01(TG:@tccjd)_2
-      - 02(TG:@tccjd)_2
-      - 03(TG:@tccjd)_1
+      - 02(TG:@tccjd)_1
+      - 03(TG:@tccjd)
       - 05(TG:@tccjd)_1
       - 06(TG:@tccjd)
       - 07(TG:@tccjd)_1
@@ -798,14 +685,8 @@ proxy-groups:
       - 11(TG:@tccjd)_1
       - 12(TG:@tccjd)_1
       - 13(TG:@tccjd)_1
-      - 14(TG:@tccjd)
       - 15(TG:@tccjd)
-      - 16(TG:@tccjd)
-      - 17(TG:@tccjd)
-      - 18(TG:@tccjd)
       - 美国
-      - 美国_1
-      - 美国_2
       - 01(TG:@tccjd)_3
       - 越南
       - 越南_1
@@ -813,21 +694,22 @@ proxy-groups:
       - 越南_3
       - 越南_4
       - 越南_5
+      - 🇭🇰 香港3|@stairnode
+      - 🇭🇰 香港 电讯盈科有限公司
+      - 🇩🇪 德国 | DEU_2
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🚀 节点选择
+      - 12(TG:@tccjd)
+      - 13(TG:@tccjd)
       - 🇺🇸 美国 | USA
       - 🇺🇸 美国 | USA_1
       - 🇩🇪 德国 | DEU
       - 🇩🇪 德国 | DEU_1
-      - 🇩🇪 德国 | DEU_2
-      - 🇭🇰 香港3|@stairnode
-      - 🇭🇰 香港 电讯盈科有限公司
       - 01(TG:@tccjd)
       - 02(TG:@tccjd)
-      - 03(TG:@tccjd)
       - 04(TG:@tccjd)
       - 05(TG:@tccjd)
       - 07(TG:@tccjd)
@@ -835,13 +717,10 @@ proxy-groups:
       - 09(TG:@tccjd)
       - 10(TG:@tccjd)
       - 11(TG:@tccjd)
-      - 12(TG:@tccjd)
-      - 13(TG:@tccjd)
       - 01(TG:@tccjd)_1
-      - 02(TG:@tccjd)_1
       - 01(TG:@tccjd)_2
-      - 02(TG:@tccjd)_2
-      - 03(TG:@tccjd)_1
+      - 02(TG:@tccjd)_1
+      - 03(TG:@tccjd)
       - 05(TG:@tccjd)_1
       - 06(TG:@tccjd)
       - 07(TG:@tccjd)_1
@@ -851,14 +730,8 @@ proxy-groups:
       - 11(TG:@tccjd)_1
       - 12(TG:@tccjd)_1
       - 13(TG:@tccjd)_1
-      - 14(TG:@tccjd)
       - 15(TG:@tccjd)
-      - 16(TG:@tccjd)
-      - 17(TG:@tccjd)
-      - 18(TG:@tccjd)
       - 美国
-      - 美国_1
-      - 美国_2
       - 01(TG:@tccjd)_3
       - 越南
       - 越南_1
@@ -866,21 +739,22 @@ proxy-groups:
       - 越南_3
       - 越南_4
       - 越南_5
+      - 🇭🇰 香港3|@stairnode
+      - 🇭🇰 香港 电讯盈科有限公司
+      - 🇩🇪 德国 | DEU_2
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
+      - 12(TG:@tccjd)
+      - 13(TG:@tccjd)
       - 🇺🇸 美国 | USA
       - 🇺🇸 美国 | USA_1
       - 🇩🇪 德国 | DEU
       - 🇩🇪 德国 | DEU_1
-      - 🇩🇪 德国 | DEU_2
-      - 🇭🇰 香港3|@stairnode
-      - 🇭🇰 香港 电讯盈科有限公司
       - 01(TG:@tccjd)
       - 02(TG:@tccjd)
-      - 03(TG:@tccjd)
       - 04(TG:@tccjd)
       - 05(TG:@tccjd)
       - 07(TG:@tccjd)
@@ -888,13 +762,10 @@ proxy-groups:
       - 09(TG:@tccjd)
       - 10(TG:@tccjd)
       - 11(TG:@tccjd)
-      - 12(TG:@tccjd)
-      - 13(TG:@tccjd)
       - 01(TG:@tccjd)_1
-      - 02(TG:@tccjd)_1
       - 01(TG:@tccjd)_2
-      - 02(TG:@tccjd)_2
-      - 03(TG:@tccjd)_1
+      - 02(TG:@tccjd)_1
+      - 03(TG:@tccjd)
       - 05(TG:@tccjd)_1
       - 06(TG:@tccjd)
       - 07(TG:@tccjd)_1
@@ -904,14 +775,8 @@ proxy-groups:
       - 11(TG:@tccjd)_1
       - 12(TG:@tccjd)_1
       - 13(TG:@tccjd)_1
-      - 14(TG:@tccjd)
       - 15(TG:@tccjd)
-      - 16(TG:@tccjd)
-      - 17(TG:@tccjd)
-      - 18(TG:@tccjd)
       - 美国
-      - 美国_1
-      - 美国_2
       - 01(TG:@tccjd)_3
       - 越南
       - 越南_1
@@ -919,6 +784,9 @@ proxy-groups:
       - 越南_3
       - 越南_4
       - 越南_5
+      - 🇭🇰 香港3|@stairnode
+      - 🇭🇰 香港 电讯盈科有限公司
+      - 🇩🇪 德国 | DEU_2
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -941,16 +809,14 @@ proxy-groups:
       - 🚀 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
+      - 12(TG:@tccjd)
+      - 13(TG:@tccjd)
       - 🇺🇸 美国 | USA
       - 🇺🇸 美国 | USA_1
       - 🇩🇪 德国 | DEU
       - 🇩🇪 德国 | DEU_1
-      - 🇩🇪 德国 | DEU_2
-      - 🇭🇰 香港3|@stairnode
-      - 🇭🇰 香港 电讯盈科有限公司
       - 01(TG:@tccjd)
       - 02(TG:@tccjd)
-      - 03(TG:@tccjd)
       - 04(TG:@tccjd)
       - 05(TG:@tccjd)
       - 07(TG:@tccjd)
@@ -958,13 +824,10 @@ proxy-groups:
       - 09(TG:@tccjd)
       - 10(TG:@tccjd)
       - 11(TG:@tccjd)
-      - 12(TG:@tccjd)
-      - 13(TG:@tccjd)
       - 01(TG:@tccjd)_1
-      - 02(TG:@tccjd)_1
       - 01(TG:@tccjd)_2
-      - 02(TG:@tccjd)_2
-      - 03(TG:@tccjd)_1
+      - 02(TG:@tccjd)_1
+      - 03(TG:@tccjd)
       - 05(TG:@tccjd)_1
       - 06(TG:@tccjd)
       - 07(TG:@tccjd)_1
@@ -974,14 +837,8 @@ proxy-groups:
       - 11(TG:@tccjd)_1
       - 12(TG:@tccjd)_1
       - 13(TG:@tccjd)_1
-      - 14(TG:@tccjd)
       - 15(TG:@tccjd)
-      - 16(TG:@tccjd)
-      - 17(TG:@tccjd)
-      - 18(TG:@tccjd)
       - 美国
-      - 美国_1
-      - 美国_2
       - 01(TG:@tccjd)_3
       - 越南
       - 越南_1
@@ -989,6 +846,9 @@ proxy-groups:
       - 越南_3
       - 越南_4
       - 越南_5
+      - 🇭🇰 香港3|@stairnode
+      - 🇭🇰 香港 电讯盈科有限公司
+      - 🇩🇪 德国 | DEU_2
 rule-providers:
   LocalAreaNetwork:
     type: http
