@@ -7041,7 +7041,7 @@ proxies:
     server: 202.146.222.174
     port: 443
     password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-    sni: "https://t.me/WangCai2            "
+    sni: https://t.me/WangCai2🇨🇳
     skip-cert-verify: true
     udp: true
   - name: 03(TG:@tccjd)_2
@@ -7049,7 +7049,7 @@ proxies:
     server: 103.115.109.49
     port: 443
     password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-    sni: "https://t.me/WangCai2            "
+    sni: https://t.me/WangCai2🇨🇳
     skip-cert-verify: true
     udp: true
   - name: 美国(TG:@tccjd)_266
