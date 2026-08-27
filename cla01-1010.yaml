@@ -24,6 +24,30 @@ dns:
       - https://1.1.1.1/dns-query#🚀 节点选择
       - https://8.8.8.8/dns-query#🚀 节点选择
 proxies:
+  - name: 新加坡(TG:@tccjd)
+    type: vmess
+    server: 188.114.97.3
+    port: 443
+    uuid: a04c5cd0-fef7-4d85-8901-ae3163889c54
+    alterId: 0
+    cipher: auto
+    tls: true
+    skip-cert-verify: true
+    servername: sg-new.vpnjatim.eu.cc
+    network: ws
+    ws-opts:
+      path: /vmess
+      headers:
+        Host: sg-new.vpnjatim.eu.cc
+    udp: true
+  - name: 荷兰(TG:@tccjd)
+    type: ss
+    server: 141.148.224.62
+    port: 45819
+    cipher: 2022-blake3-chacha20-poly1305
+    password: pRw6isGh2Qyv8uUC+NWxZGEUHqkhkoWE3R7mCbD2Dcg=
+    skip-cert-verify: true
+    udp: true
   - name: 01(TG:@tccjd)
     type: vless
     server: 5.75.193.127
@@ -113,15 +137,6 @@ proxies:
       short-id: 64299c2e
     skip-cert-verify: true
     udp: true
-  - name: 日本(TG:@tccjd)_1
-    type: anytls
-    server: jpglobal-identity-federation-auth.younai-ytl.shop
-    port: 12791
-    password: 29204996-a723-4291-8c70-30843b592d40
-    sni: jp10.pulsarcore.site
-    skip-cert-verify: true
-    tls: true
-    udp: true
   - name: 美国(TG:@tccjd)
     type: vless
     server: grimness-backlogs.cdn-content.com
@@ -207,49 +222,7 @@ proxies:
         Host: vod.ensf.top
     skip-cert-verify: true
     udp: true
-  - name: 新加坡(TG:@tccjd)
-    type: vmess
-    server: 188.114.97.3
-    port: 443
-    uuid: a04c5cd0-fef7-4d85-8901-ae3163889c54
-    alterId: 0
-    cipher: auto
-    tls: true
-    skip-cert-verify: true
-    servername: sg-new.vpnjatim.eu.cc
-    network: ws
-    ws-opts:
-      path: /vmess
-      headers:
-        Host: sg-new.vpnjatim.eu.cc
-    udp: true
-  - name: 日本(TG:@tccjd)_2
-    type: anytls
-    server: jpglobal-identity-federation-auth.younai-ytl.shop
-    port: 12791
-    password: 29204996-a723-4291-8c70-30843b592d40
-    sni: jp10.pulsarcore.site
-    skip-cert-verify: true
-    tls: true
-    udp: true
-  - name: 荷兰(TG:@tccjd)
-    type: ss
-    server: 141.148.224.62
-    port: 45819
-    cipher: 2022-blake3-chacha20-poly1305
-    password: pRw6isGh2Qyv8uUC+NWxZGEUHqkhkoWE3R7mCbD2Dcg=
-    skip-cert-verify: true
-    udp: true
   - name: 美国(TG:@tccjd)_3
-    type: anytls
-    server: jpglobal-identity-federation-auth.younai-ytl.shop
-    port: 28219
-    password: 29204996-a723-4291-8c70-30843b592d40
-    sni: us05.pulsarcore.site
-    skip-cert-verify: true
-    tls: true
-    udp: true
-  - name: 美国(TG:@tccjd)_4
     type: vless
     server: 185.195.69.158
     port: 443
@@ -307,7 +280,7 @@ proxies:
         Host: vod.ensf.top
     skip-cert-verify: true
     udp: true
-  - name: 美国(TG:@tccjd)_5
+  - name: 美国(TG:@tccjd)_4
     type: vless
     server: 185.253.46.27
     port: 443
@@ -322,7 +295,7 @@ proxies:
         Host: vod.ensf.top
     skip-cert-verify: true
     udp: true
-  - name: 美国(TG:@tccjd)_6
+  - name: 美国(TG:@tccjd)_5
     type: vless
     server: 151.242.168.69
     port: 335
@@ -336,7 +309,7 @@ proxies:
       short-id: ec2213ae33d5b43f
     skip-cert-verify: true
     udp: true
-  - name: 美国(TG:@tccjd)_7
+  - name: 美国(TG:@tccjd)_6
     type: vless
     server: 85.90.196.38
     port: 443
@@ -351,7 +324,7 @@ proxies:
         Host: vod.ensf.top
     skip-cert-verify: true
     udp: true
-  - name: 美国(TG:@tccjd)_8
+  - name: 美国(TG:@tccjd)_7
     type: vless
     server: 46.29.235.9
     port: 443
@@ -365,7 +338,7 @@ proxies:
       short-id: a1b2c3d4
     skip-cert-verify: true
     udp: true
-  - name: 美国(TG:@tccjd)_9
+  - name: 美国(TG:@tccjd)_8
     type: vless
     server: 194.55.164.154
     port: 8443
@@ -380,7 +353,7 @@ proxies:
         Host: vod.ensf.top
     skip-cert-verify: true
     udp: true
-  - name: 美国(TG:@tccjd)_10
+  - name: 美国(TG:@tccjd)_9
     type: vless
     server: 77.91.69.141
     port: 8443
@@ -395,7 +368,7 @@ proxies:
         Host: vod.ensf.top
     skip-cert-verify: true
     udp: true
-  - name: 美国(TG:@tccjd)_11
+  - name: 美国(TG:@tccjd)_10
     type: vless
     server: 195.135.254.15
     port: 443
@@ -410,7 +383,7 @@ proxies:
         Host: vod.ensf.top
     skip-cert-verify: true
     udp: true
-  - name: 美国(TG:@tccjd)_12
+  - name: 美国(TG:@tccjd)_11
     type: vless
     server: 46.29.235.9
     port: 443
@@ -439,12 +412,41 @@ proxies:
         Host: vod.ensf.top
     skip-cert-verify: true
     udp: true
+  - name: 日本(TG:@tccjd)_1
+    type: anytls
+    server: jpglobal-identity-federation-auth.younai-ytl.shop
+    port: 12791
+    password: 29204996-a723-4291-8c70-30843b592d40
+    sni: jp10.pulsarcore.site
+    skip-cert-verify: true
+    tls: true
+    udp: true
+  - name: 日本(TG:@tccjd)_2
+    type: anytls
+    server: jpglobal-identity-federation-auth.younai-ytl.shop
+    port: 12791
+    password: 29204996-a723-4291-8c70-30843b592d40
+    sni: jp10.pulsarcore.site
+    skip-cert-verify: true
+    tls: true
+    udp: true
+  - name: 美国(TG:@tccjd)_12
+    type: anytls
+    server: jpglobal-identity-federation-auth.younai-ytl.shop
+    port: 28219
+    password: 29204996-a723-4291-8c70-30843b592d40
+    sni: us05.pulsarcore.site
+    skip-cert-verify: true
+    tls: true
+    udp: true
 proxy-groups:
   - name: 🚀 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - DIRECT
+      - 新加坡(TG:@tccjd)
+      - 荷兰(TG:@tccjd)
       - 01(TG:@tccjd)
       - 02(TG:@tccjd)
       - 01(TG:@tccjd)_1
@@ -452,21 +454,17 @@ proxy-groups:
       - 英国(TG:@tccjd)
       - 波兰(TG:@tccjd)
       - 日本(TG:@tccjd)
-      - 日本(TG:@tccjd)_1
       - 美国(TG:@tccjd)
       - 德国(TG:@tccjd)
       - 德国(TG:@tccjd)_1
       - 德国 (TG:@tccjd)
       - 美国(TG:@tccjd)_1
       - 美国(TG:@tccjd)_2
-      - 新加坡(TG:@tccjd)
-      - 日本(TG:@tccjd)_2
-      - 荷兰(TG:@tccjd)
       - 美国(TG:@tccjd)_3
-      - 美国(TG:@tccjd)_4
       - 香港(TG:@tccjd)
       - 俄罗斯(TG:@tccjd)
       - 德国(TG:@tccjd)_2
+      - 美国(TG:@tccjd)_4
       - 美国(TG:@tccjd)_5
       - 美国(TG:@tccjd)_6
       - 美国(TG:@tccjd)_7
@@ -474,11 +472,15 @@ proxy-groups:
       - 美国(TG:@tccjd)_9
       - 美国(TG:@tccjd)_10
       - 美国(TG:@tccjd)_11
-      - 美国(TG:@tccjd)_12
       - 德国(TG:@tccjd)_3
+      - 日本(TG:@tccjd)_1
+      - 日本(TG:@tccjd)_2
+      - 美国(TG:@tccjd)_12
   - name: ♻️ 自动选择
     type: url-test
     proxies:
+      - 新加坡(TG:@tccjd)
+      - 荷兰(TG:@tccjd)
       - 01(TG:@tccjd)
       - 02(TG:@tccjd)
       - 01(TG:@tccjd)_1
@@ -486,21 +488,17 @@ proxy-groups:
       - 英国(TG:@tccjd)
       - 波兰(TG:@tccjd)
       - 日本(TG:@tccjd)
-      - 日本(TG:@tccjd)_1
       - 美国(TG:@tccjd)
       - 德国(TG:@tccjd)
       - 德国(TG:@tccjd)_1
       - 德国 (TG:@tccjd)
       - 美国(TG:@tccjd)_1
       - 美国(TG:@tccjd)_2
-      - 新加坡(TG:@tccjd)
-      - 日本(TG:@tccjd)_2
-      - 荷兰(TG:@tccjd)
       - 美国(TG:@tccjd)_3
-      - 美国(TG:@tccjd)_4
       - 香港(TG:@tccjd)
       - 俄罗斯(TG:@tccjd)
       - 德国(TG:@tccjd)_2
+      - 美国(TG:@tccjd)_4
       - 美国(TG:@tccjd)_5
       - 美国(TG:@tccjd)_6
       - 美国(TG:@tccjd)_7
@@ -508,8 +506,10 @@ proxy-groups:
       - 美国(TG:@tccjd)_9
       - 美国(TG:@tccjd)_10
       - 美国(TG:@tccjd)_11
-      - 美国(TG:@tccjd)_12
       - 德国(TG:@tccjd)_3
+      - 日本(TG:@tccjd)_1
+      - 日本(TG:@tccjd)_2
+      - 美国(TG:@tccjd)_12
     url: http://www.gstatic.com/generate_204
     interval: 300
     tolerance: 50
@@ -519,6 +519,8 @@ proxy-groups:
       - 🚀 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
+      - 新加坡(TG:@tccjd)
+      - 荷兰(TG:@tccjd)
       - 01(TG:@tccjd)
       - 02(TG:@tccjd)
       - 01(TG:@tccjd)_1
@@ -526,21 +528,17 @@ proxy-groups:
       - 英国(TG:@tccjd)
       - 波兰(TG:@tccjd)
       - 日本(TG:@tccjd)
-      - 日本(TG:@tccjd)_1
       - 美国(TG:@tccjd)
       - 德国(TG:@tccjd)
       - 德国(TG:@tccjd)_1
       - 德国 (TG:@tccjd)
       - 美国(TG:@tccjd)_1
       - 美国(TG:@tccjd)_2
-      - 新加坡(TG:@tccjd)
-      - 日本(TG:@tccjd)_2
-      - 荷兰(TG:@tccjd)
       - 美国(TG:@tccjd)_3
-      - 美国(TG:@tccjd)_4
       - 香港(TG:@tccjd)
       - 俄罗斯(TG:@tccjd)
       - 德国(TG:@tccjd)_2
+      - 美国(TG:@tccjd)_4
       - 美国(TG:@tccjd)_5
       - 美国(TG:@tccjd)_6
       - 美国(TG:@tccjd)_7
@@ -548,13 +546,17 @@ proxy-groups:
       - 美国(TG:@tccjd)_9
       - 美国(TG:@tccjd)_10
       - 美国(TG:@tccjd)_11
-      - 美国(TG:@tccjd)_12
       - 德国(TG:@tccjd)_3
+      - 日本(TG:@tccjd)_1
+      - 日本(TG:@tccjd)_2
+      - 美国(TG:@tccjd)_12
   - name: 📲 电报信息
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
+      - 新加坡(TG:@tccjd)
+      - 荷兰(TG:@tccjd)
       - 01(TG:@tccjd)
       - 02(TG:@tccjd)
       - 01(TG:@tccjd)_1
@@ -562,21 +564,17 @@ proxy-groups:
       - 英国(TG:@tccjd)
       - 波兰(TG:@tccjd)
       - 日本(TG:@tccjd)
-      - 日本(TG:@tccjd)_1
       - 美国(TG:@tccjd)
       - 德国(TG:@tccjd)
       - 德国(TG:@tccjd)_1
       - 德国 (TG:@tccjd)
       - 美国(TG:@tccjd)_1
       - 美国(TG:@tccjd)_2
-      - 新加坡(TG:@tccjd)
-      - 日本(TG:@tccjd)_2
-      - 荷兰(TG:@tccjd)
       - 美国(TG:@tccjd)_3
-      - 美国(TG:@tccjd)_4
       - 香港(TG:@tccjd)
       - 俄罗斯(TG:@tccjd)
       - 德国(TG:@tccjd)_2
+      - 美国(TG:@tccjd)_4
       - 美国(TG:@tccjd)_5
       - 美国(TG:@tccjd)_6
       - 美国(TG:@tccjd)_7
@@ -584,13 +582,17 @@ proxy-groups:
       - 美国(TG:@tccjd)_9
       - 美国(TG:@tccjd)_10
       - 美国(TG:@tccjd)_11
-      - 美国(TG:@tccjd)_12
       - 德国(TG:@tccjd)_3
+      - 日本(TG:@tccjd)_1
+      - 日本(TG:@tccjd)_2
+      - 美国(TG:@tccjd)_12
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🚀 节点选择
+      - 新加坡(TG:@tccjd)
+      - 荷兰(TG:@tccjd)
       - 01(TG:@tccjd)
       - 02(TG:@tccjd)
       - 01(TG:@tccjd)_1
@@ -598,21 +600,17 @@ proxy-groups:
       - 英国(TG:@tccjd)
       - 波兰(TG:@tccjd)
       - 日本(TG:@tccjd)
-      - 日本(TG:@tccjd)_1
       - 美国(TG:@tccjd)
       - 德国(TG:@tccjd)
       - 德国(TG:@tccjd)_1
       - 德国 (TG:@tccjd)
       - 美国(TG:@tccjd)_1
       - 美国(TG:@tccjd)_2
-      - 新加坡(TG:@tccjd)
-      - 日本(TG:@tccjd)_2
-      - 荷兰(TG:@tccjd)
       - 美国(TG:@tccjd)_3
-      - 美国(TG:@tccjd)_4
       - 香港(TG:@tccjd)
       - 俄罗斯(TG:@tccjd)
       - 德国(TG:@tccjd)_2
+      - 美国(TG:@tccjd)_4
       - 美国(TG:@tccjd)_5
       - 美国(TG:@tccjd)_6
       - 美国(TG:@tccjd)_7
@@ -620,13 +618,17 @@ proxy-groups:
       - 美国(TG:@tccjd)_9
       - 美国(TG:@tccjd)_10
       - 美国(TG:@tccjd)_11
-      - 美国(TG:@tccjd)_12
       - 德国(TG:@tccjd)_3
+      - 日本(TG:@tccjd)_1
+      - 日本(TG:@tccjd)_2
+      - 美国(TG:@tccjd)_12
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
+      - 新加坡(TG:@tccjd)
+      - 荷兰(TG:@tccjd)
       - 01(TG:@tccjd)
       - 02(TG:@tccjd)
       - 01(TG:@tccjd)_1
@@ -634,21 +636,17 @@ proxy-groups:
       - 英国(TG:@tccjd)
       - 波兰(TG:@tccjd)
       - 日本(TG:@tccjd)
-      - 日本(TG:@tccjd)_1
       - 美国(TG:@tccjd)
       - 德国(TG:@tccjd)
       - 德国(TG:@tccjd)_1
       - 德国 (TG:@tccjd)
       - 美国(TG:@tccjd)_1
       - 美国(TG:@tccjd)_2
-      - 新加坡(TG:@tccjd)
-      - 日本(TG:@tccjd)_2
-      - 荷兰(TG:@tccjd)
       - 美国(TG:@tccjd)_3
-      - 美国(TG:@tccjd)_4
       - 香港(TG:@tccjd)
       - 俄罗斯(TG:@tccjd)
       - 德国(TG:@tccjd)_2
+      - 美国(TG:@tccjd)_4
       - 美国(TG:@tccjd)_5
       - 美国(TG:@tccjd)_6
       - 美国(TG:@tccjd)_7
@@ -656,8 +654,10 @@ proxy-groups:
       - 美国(TG:@tccjd)_9
       - 美国(TG:@tccjd)_10
       - 美国(TG:@tccjd)_11
-      - 美国(TG:@tccjd)_12
       - 德国(TG:@tccjd)_3
+      - 日本(TG:@tccjd)_1
+      - 日本(TG:@tccjd)_2
+      - 美国(TG:@tccjd)_12
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -680,6 +680,8 @@ proxy-groups:
       - 🚀 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
+      - 新加坡(TG:@tccjd)
+      - 荷兰(TG:@tccjd)
       - 01(TG:@tccjd)
       - 02(TG:@tccjd)
       - 01(TG:@tccjd)_1
@@ -687,21 +689,17 @@ proxy-groups:
       - 英国(TG:@tccjd)
       - 波兰(TG:@tccjd)
       - 日本(TG:@tccjd)
-      - 日本(TG:@tccjd)_1
       - 美国(TG:@tccjd)
       - 德国(TG:@tccjd)
       - 德国(TG:@tccjd)_1
       - 德国 (TG:@tccjd)
       - 美国(TG:@tccjd)_1
       - 美国(TG:@tccjd)_2
-      - 新加坡(TG:@tccjd)
-      - 日本(TG:@tccjd)_2
-      - 荷兰(TG:@tccjd)
       - 美国(TG:@tccjd)_3
-      - 美国(TG:@tccjd)_4
       - 香港(TG:@tccjd)
       - 俄罗斯(TG:@tccjd)
       - 德国(TG:@tccjd)_2
+      - 美国(TG:@tccjd)_4
       - 美国(TG:@tccjd)_5
       - 美国(TG:@tccjd)_6
       - 美国(TG:@tccjd)_7
@@ -709,8 +707,10 @@ proxy-groups:
       - 美国(TG:@tccjd)_9
       - 美国(TG:@tccjd)_10
       - 美国(TG:@tccjd)_11
-      - 美国(TG:@tccjd)_12
       - 德国(TG:@tccjd)_3
+      - 日本(TG:@tccjd)_1
+      - 日本(TG:@tccjd)_2
+      - 美国(TG:@tccjd)_12
 rule-providers:
   LocalAreaNetwork:
     type: http
