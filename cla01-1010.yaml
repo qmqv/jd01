@@ -40,14 +40,6 @@ proxies:
     skip-cert-verify: true
     udp: true
   - name: 🇺🇸 美国 | USA
-    type: trojan
-    server: 43.173.90.202
-    port: 443
-    password: sg-trojan-2026
-    sni: sg-proxy.local
-    skip-cert-verify: true
-    udp: true
-  - name: 🇺🇸 美国 | USA_1
     type: vless
     server: 104.18.34.245
     port: 8880
@@ -60,15 +52,44 @@ proxies:
         Host: square-tree-3dbf.285.workers.dev
     skip-cert-verify: true
     udp: true
-  - name: 俄罗斯
-    type: hysteria2
-    server: gta.internet-card.sbs
+  - name: 01(TG:@tccjd)
+    type: vless
+    server: 104.21.63.28
     port: 443
-    password: mkL3AfdSZIpTWRB9TcWPn9vywPGN89MRHg3ToRDj
-    sni: gta.internet-card.sbs
+    uuid: 44eae030-290b-4083-8102-6f8bab05701b
+    network: ws
+    servername: cfvvv-ev1.pages.dev
+    tls: true
+    ws-opts:
+      path: /
+      headers:
+        Host: cfvvv-ev1.pages.dev
     skip-cert-verify: true
     udp: true
-  - name: 01(TG:@tccjd)
+  - name: 02(TG:@tccjd)
+    type: vless
+    server: 104.16.10.199
+    port: 443
+    uuid: 44eae030-290b-4083-8102-6f8bab05701b
+    network: ws
+    servername: cfvvv-ev1.pages.dev
+    tls: true
+    client-fingerprint: unsafe
+    ws-opts:
+      path: /
+      headers:
+        Host: cfvvv-ev1.pages.dev
+    skip-cert-verify: true
+    udp: true
+  - name: 🇺🇸 美国 | USA_1
+    type: trojan
+    server: 43.173.90.202
+    port: 443
+    password: sg-trojan-2026
+    sni: sg-proxy.local
+    skip-cert-verify: true
+    udp: true
+  - name: 01(TG:@tccjd)_1
     type: trojan
     server: 167.82.76.7
     port: 443
@@ -82,7 +103,7 @@ proxies:
       headers:
         Host: mitivpn---ss--s---mitivpn-33e.global.ssl.fastly.net
     udp: true
-  - name: 02(TG:@tccjd)
+  - name: 02(TG:@tccjd)_1
     type: trojan
     server: 199.232.78.160
     port: 443
@@ -148,35 +169,6 @@ proxies:
       headers:
         Host: www.calmlunch.com
     udp: true
-  - name: 01(TG:@tccjd)_1
-    type: vless
-    server: 104.21.63.28
-    port: 443
-    uuid: 44eae030-290b-4083-8102-6f8bab05701b
-    network: ws
-    servername: cfvvv-ev1.pages.dev
-    tls: true
-    ws-opts:
-      path: /
-      headers:
-        Host: cfvvv-ev1.pages.dev
-    skip-cert-verify: true
-    udp: true
-  - name: 02(TG:@tccjd)_1
-    type: vless
-    server: 104.16.10.199
-    port: 443
-    uuid: 44eae030-290b-4083-8102-6f8bab05701b
-    network: ws
-    servername: cfvvv-ev1.pages.dev
-    tls: true
-    client-fingerprint: unsafe
-    ws-opts:
-      path: /
-      headers:
-        Host: cfvvv-ev1.pages.dev
-    skip-cert-verify: true
-    udp: true
   - name: 美国(TG:@tccjd)
     type: trojan
     server: 167.82.76.7
@@ -227,19 +219,12 @@ proxies:
       headers:
         Host: uwu.dianaw.cc.cd
     udp: true
-  - name: (TG:@tccjd)英国
-    type: vless
-    server: 217.163.76.118
-    port: 2086
-    uuid: b7977b65-cfd8-4db9-a029-6ef014a4ae4a
-    network: http
-    tls: false
-    http-opts:
-      path:
-        - /
-      headers:
-        Host:
-          - xvh.andishehparenting.com
+  - name: 俄罗斯
+    type: hysteria2
+    server: gta.internet-card.sbs
+    port: 443
+    password: mkL3AfdSZIpTWRB9TcWPn9vywPGN89MRHg3ToRDj
+    sni: gta.internet-card.sbs
     skip-cert-verify: true
     udp: true
 proxy-groups:
@@ -250,41 +235,39 @@ proxy-groups:
       - DIRECT
       - 🇫🇷 法国 | FRA
       - 🇺🇸 美国 | USA
-      - 🇺🇸 美国 | USA_1
-      - 俄罗斯
       - 01(TG:@tccjd)
       - 02(TG:@tccjd)
+      - 🇺🇸 美国 | USA_1
+      - 01(TG:@tccjd)_1
+      - 02(TG:@tccjd)_1
       - 03(TG:@tccjd)
       - 04(TG:@tccjd)
       - 05(TG:@tccjd)
       - 06(TG:@tccjd)
-      - 01(TG:@tccjd)_1
-      - 02(TG:@tccjd)_1
       - 美国(TG:@tccjd)
       - 01(TG:@tccjd)_2
       - (TG:@tccjd) 美国
       - (TG:@tccjd) 美国_1
-      - (TG:@tccjd)英国
+      - 俄罗斯
   - name: ♻️ 自动选择
     type: url-test
     proxies:
       - 🇫🇷 法国 | FRA
       - 🇺🇸 美国 | USA
-      - 🇺🇸 美国 | USA_1
-      - 俄罗斯
       - 01(TG:@tccjd)
       - 02(TG:@tccjd)
+      - 🇺🇸 美国 | USA_1
+      - 01(TG:@tccjd)_1
+      - 02(TG:@tccjd)_1
       - 03(TG:@tccjd)
       - 04(TG:@tccjd)
       - 05(TG:@tccjd)
       - 06(TG:@tccjd)
-      - 01(TG:@tccjd)_1
-      - 02(TG:@tccjd)_1
       - 美国(TG:@tccjd)
       - 01(TG:@tccjd)_2
       - (TG:@tccjd) 美国
       - (TG:@tccjd) 美国_1
-      - (TG:@tccjd)英国
+      - 俄罗斯
     url: http://www.gstatic.com/generate_204
     interval: 300
     tolerance: 50
@@ -296,21 +279,20 @@ proxy-groups:
       - 🎯 全球直连
       - 🇫🇷 法国 | FRA
       - 🇺🇸 美国 | USA
-      - 🇺🇸 美国 | USA_1
-      - 俄罗斯
       - 01(TG:@tccjd)
       - 02(TG:@tccjd)
+      - 🇺🇸 美国 | USA_1
+      - 01(TG:@tccjd)_1
+      - 02(TG:@tccjd)_1
       - 03(TG:@tccjd)
       - 04(TG:@tccjd)
       - 05(TG:@tccjd)
       - 06(TG:@tccjd)
-      - 01(TG:@tccjd)_1
-      - 02(TG:@tccjd)_1
       - 美国(TG:@tccjd)
       - 01(TG:@tccjd)_2
       - (TG:@tccjd) 美国
       - (TG:@tccjd) 美国_1
-      - (TG:@tccjd)英国
+      - 俄罗斯
   - name: 📲 电报信息
     type: select
     proxies:
@@ -318,21 +300,20 @@ proxy-groups:
       - 🎯 全球直连
       - 🇫🇷 法国 | FRA
       - 🇺🇸 美国 | USA
-      - 🇺🇸 美国 | USA_1
-      - 俄罗斯
       - 01(TG:@tccjd)
       - 02(TG:@tccjd)
+      - 🇺🇸 美国 | USA_1
+      - 01(TG:@tccjd)_1
+      - 02(TG:@tccjd)_1
       - 03(TG:@tccjd)
       - 04(TG:@tccjd)
       - 05(TG:@tccjd)
       - 06(TG:@tccjd)
-      - 01(TG:@tccjd)_1
-      - 02(TG:@tccjd)_1
       - 美国(TG:@tccjd)
       - 01(TG:@tccjd)_2
       - (TG:@tccjd) 美国
       - (TG:@tccjd) 美国_1
-      - (TG:@tccjd)英国
+      - 俄罗斯
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
@@ -340,21 +321,20 @@ proxy-groups:
       - 🚀 节点选择
       - 🇫🇷 法国 | FRA
       - 🇺🇸 美国 | USA
-      - 🇺🇸 美国 | USA_1
-      - 俄罗斯
       - 01(TG:@tccjd)
       - 02(TG:@tccjd)
+      - 🇺🇸 美国 | USA_1
+      - 01(TG:@tccjd)_1
+      - 02(TG:@tccjd)_1
       - 03(TG:@tccjd)
       - 04(TG:@tccjd)
       - 05(TG:@tccjd)
       - 06(TG:@tccjd)
-      - 01(TG:@tccjd)_1
-      - 02(TG:@tccjd)_1
       - 美国(TG:@tccjd)
       - 01(TG:@tccjd)_2
       - (TG:@tccjd) 美国
       - (TG:@tccjd) 美国_1
-      - (TG:@tccjd)英国
+      - 俄罗斯
   - name: 🍎 苹果服务
     type: select
     proxies:
@@ -362,21 +342,20 @@ proxy-groups:
       - 🎯 全球直连
       - 🇫🇷 法国 | FRA
       - 🇺🇸 美国 | USA
-      - 🇺🇸 美国 | USA_1
-      - 俄罗斯
       - 01(TG:@tccjd)
       - 02(TG:@tccjd)
+      - 🇺🇸 美国 | USA_1
+      - 01(TG:@tccjd)_1
+      - 02(TG:@tccjd)_1
       - 03(TG:@tccjd)
       - 04(TG:@tccjd)
       - 05(TG:@tccjd)
       - 06(TG:@tccjd)
-      - 01(TG:@tccjd)_1
-      - 02(TG:@tccjd)_1
       - 美国(TG:@tccjd)
       - 01(TG:@tccjd)_2
       - (TG:@tccjd) 美国
       - (TG:@tccjd) 美国_1
-      - (TG:@tccjd)英国
+      - 俄罗斯
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -401,21 +380,20 @@ proxy-groups:
       - ♻️ 自动选择
       - 🇫🇷 法国 | FRA
       - 🇺🇸 美国 | USA
-      - 🇺🇸 美国 | USA_1
-      - 俄罗斯
       - 01(TG:@tccjd)
       - 02(TG:@tccjd)
+      - 🇺🇸 美国 | USA_1
+      - 01(TG:@tccjd)_1
+      - 02(TG:@tccjd)_1
       - 03(TG:@tccjd)
       - 04(TG:@tccjd)
       - 05(TG:@tccjd)
       - 06(TG:@tccjd)
-      - 01(TG:@tccjd)_1
-      - 02(TG:@tccjd)_1
       - 美国(TG:@tccjd)
       - 01(TG:@tccjd)_2
       - (TG:@tccjd) 美国
       - (TG:@tccjd) 美国_1
-      - (TG:@tccjd)英国
+      - 俄罗斯
 rule-providers:
   LocalAreaNetwork:
     type: http
